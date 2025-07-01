@@ -17,7 +17,7 @@ export default function ResellerCustomer() {
   const getResellerCustomer = async (page) => {
 
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/admin/resellerSubscriptions?page=${page}&id=${id}`, {
+      const response = await fetch(`https://novatv.onrender.com/admin/resellerSubscriptions?page=${page}&id=${id}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

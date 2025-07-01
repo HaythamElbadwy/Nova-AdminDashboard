@@ -16,7 +16,7 @@ export default function TermsCondition() {
   const addTermsCondition = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/footerContent/add`, {
+      const response = await fetch(`https://novatv.onrender.com/footerContent/add`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ export default function TermsCondition() {
   const getTermsCondition = async () => {
 
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/footerContent/get?page=Terms_Conditions`, {
+      const response = await fetch(`https://novatv.onrender.com/footerContent/get?page=Terms_Conditions`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

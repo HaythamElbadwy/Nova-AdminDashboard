@@ -16,7 +16,7 @@ export default function LoginDetails() {
 
   const adminInfo = async () => {
     try {
-      const response = await fetch('https://nova-psi-five.vercel.app/admin/info', {
+      const response = await fetch('https://novatv.onrender.com/admin/info', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ export default function LoginDetails() {
   const adminUpdate = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch('https://nova-psi-five.vercel.app/admin/update', {
+      const response = await fetch('https://novatv.onrender.com/admin/update', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

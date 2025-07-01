@@ -22,7 +22,7 @@ export default function Login() {
 
     // e.preventDefault();
     try {
-      const response = await fetch('https://nova-psi-five.vercel.app/admin/login', {
+      const response = await fetch('https://novatv.onrender.com/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

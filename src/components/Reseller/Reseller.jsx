@@ -44,7 +44,7 @@ export default function Reseller() {
   const getReseller = async (page) => {
 
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/reseller/get?page=${page}`, {
+      const response = await fetch(`https://novatv.onrender.com/reseller/get?page=${page}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ export default function Reseller() {
     console.log(email, isName, password, customerLimit);
     setIsLoading(true)
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/admin/createReseller`, {
+      const response = await fetch(`https://novatv.onrender.com/admin/createReseller`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -164,7 +164,7 @@ export default function Reseller() {
     console.log(password);
     setIsLoading(true)
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/reseller/update/${id}`, {
+      const response = await fetch(`https://novatv.onrender.com/reseller/update/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -222,7 +222,7 @@ export default function Reseller() {
   const blockReseller = async (id) => {
     setIsLoading(true)
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/admin/blockReseller/${id}`, {
+      const response = await fetch(`https://novatv.onrender.com/admin/blockReseller/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

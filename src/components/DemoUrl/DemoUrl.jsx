@@ -14,7 +14,7 @@ export default function DemoUrl() {
     const getDemoM3u = async () => {
 
       try {
-        const response = await fetch(`https://nova-psi-five.vercel.app/demo/get`, {
+        const response = await fetch(`https://novatv.onrender.com/demo/get`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ export default function DemoUrl() {
   const addDemoUrl = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/demo/add`, {
+      const response = await fetch(`https://novatv.onrender.com/demo/add`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

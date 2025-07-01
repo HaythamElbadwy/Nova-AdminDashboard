@@ -27,7 +27,7 @@ export default function Transaction() {
   const getTransaction = async (page) => {
 
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/subscription/getAll?page=${page}`, {
+      const response = await fetch(`https://novatv.onrender.com/subscription/getAll?page=${page}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ export default function Transaction() {
     }
 
     try {
-      const response = await fetch(`https://nova-psi-five.vercel.app/subscription/searchByMac?macAddress=${macAddress}`, {
+      const response = await fetch(`https://novatv.onrender.com/subscription/searchByMac?macAddress=${macAddress}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

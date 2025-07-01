@@ -36,7 +36,7 @@ export default function Sidebar() {
   // };
   const adminInfo = async () => {
     try {
-      const response = await fetch('https://nova-psi-five.vercel.app/admin/info', {
+      const response = await fetch('https://novatv.onrender.com/admin/info', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
