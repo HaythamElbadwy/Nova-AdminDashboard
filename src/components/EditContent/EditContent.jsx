@@ -81,7 +81,7 @@ export default function EditContent() {
                   Privacy & Policy
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   onClick={() => handleSelectEditContent("Activation")}
@@ -89,7 +89,7 @@ export default function EditContent() {
                 >
                   Activation
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         )}
@@ -103,8 +103,8 @@ export default function EditContent() {
             return <TermsCondition />;
           case "PrivacyPolicy":
             return <PrivacyPolicy />;
-          case "Activation":
-            return <Activation />;
+          // case "Activation":
+          //   return <Activation />;
           default:
             return <div>No Component Found</div>; // Optional: Handle unknown routes
         }

@@ -13,6 +13,7 @@ import { ToastContainer } from 'react-toastify';
 import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes'
 import ResellerCustomer from './components/ResellerCustomer/ResellerCustomer'
 import ProviderCustomer from './components/ProviderCustomer/ProviderCustomer'
+import Activation from './components/Activation/Activation'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -52,6 +53,13 @@ function App() {
           element:
             <ProtectedRoutes>
               <Reseller />
+            </ProtectedRoutes>,
+        },
+        {
+          path: "activation",
+          element:
+            <ProtectedRoutes>
+              <Activation />
             </ProtectedRoutes>,
         },
         {

@@ -13,6 +13,7 @@ export default function Sidebar() {
   const [isHoveredReseller, setIsHoveredReseller] = useState(false);
   const [isHoveredSetting, setIsHoveredSetting] = useState(false);
   const [isHoveredLogOut, setIsHoveredLogOut] = useState(false);
+  const [isHoveredActivation, setIsHoveredActivation] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   // const [selectedLanguage, setSelectedLanguage] = useState('EN');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -154,7 +155,7 @@ export default function Sidebar() {
                   <i className={`fa-solid fa-qrcode ${styles.icon}`}></i>
 
                   {isHoveredEditeContent && (
-                    <span className={`hover_text ml-1`}>
+                    <span className={`hover_text ml-2`}>
                       Edite Content
                     </span>
                   )}
@@ -186,8 +187,25 @@ export default function Sidebar() {
                   <i className={`fa-solid fa-users ${styles.icon}`}></i>
 
                   {isHoveredReseller && (
-                    <span className={`hover_text ml-1`}>
+                    <span className={`hover_text ml-2`}>
                       Reseller
+                    </span>
+                  )}
+                </NavLink>
+
+              </li>
+
+                            <li
+                className={`${styles.hover_container} ${isHoveredActivation ? `${styles.hovered}` : ""}`}
+                onMouseEnter={() => setIsHoveredActivation(true)}
+                onMouseLeave={() => setIsHoveredActivation(false)}
+              >
+                <NavLink className={'flex justify-center items-center'} to={"activation"}>
+                  <i className={`fa-solid fa-money-check-dollar ${styles.icon}`}></i>
+
+                  {isHoveredActivation && (
+                    <span className={`hover_text ml-2`}>
+                      Activation
                     </span>
                   )}
                 </NavLink>
@@ -203,7 +221,7 @@ export default function Sidebar() {
                   <i className={`fa-solid fa-gear ${styles.icon}`}></i>
 
                   {isHoveredSetting && (
-                    <span className={`hover_text ml-1`}>
+                    <span className={`hover_text ml-2`}>
                       Setting
                     </span>
                   )}
@@ -219,7 +237,7 @@ export default function Sidebar() {
                   <i className={`fa-solid fa-power-off ${styles.iconLogOut}`}></i>
 
                   {isHoveredLogOut && (
-                    <span className={`${styles.hover_text_logOut} ml-1`}>
+                    <span className={`${styles.hover_text_logOut} ml-2`}>
                       Logout
                     </span>
                   )}

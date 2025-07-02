@@ -246,7 +246,7 @@ export default function Activation() {
     <>
 
 
-      <form className={`${styles.form_activation} mt-5 w-[90%] h-1/2 ml-[6rem] mr-[96px]`}>
+      <form className={`${styles.form_activation} mt-20 w-[90%] h-1/2 ml-[6rem] mr-[96px]`}>
         <h1 className='flex text-2xl font-bolder mb-3 text-gray-800'>Price</h1>
         <div className="mb-5 mr-auto">
           <label htmlFor="activationprice" className="flex mb-4 text-sm font-medium text-gray-900 dark:text-white">Activation price</label>
