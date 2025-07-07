@@ -38,7 +38,10 @@ export default function Transaction() {
       const data = await response.json();
 
       if (response.ok) {
+          console.log(data);
         setAllTransaction(data.subscriptions);
+      
+        
         setCurrentPage(data.page);
         setAllPage(data.totalPages)
       } else {
@@ -223,12 +226,12 @@ export default function Transaction() {
           <tbody>
             {filteredTransactions.length > 0 ? (
               filteredTransactions.map((item, index) => (
-                <tr>
-                  <td scope="col" className="px-6 py-4">{item.userId.macAddress}</td>
-                  <td scope="col" className="px-6 py-3">{item.userId.type}</td>
-                  <td scope="col" className="px-6 py-3">{item.cost}</td>
-                  <td scope="col" className="px-6 py-3">{item.time}</td>
-                  <td scope="col" className="px-6 py-3">{item.subscriptionEndDate}</td>
+                <tr key={index}>
+                  <td scope="col" className="px-6 py-4">{item.userId?.macAddress}</td>
+                  <td scope="col" className="px-6 py-3">{item.userId?.type}</td>
+                  <td scope="col" className="px-6 py-3">{item?.cost}</td>
+                  <td scope="col" className="px-6 py-3">{item?.time}</td>
+                  <td scope="col" className="px-6 py-3">{item?.subscriptionEndDate}</td>
                 </tr>
               ))
             ) : (
