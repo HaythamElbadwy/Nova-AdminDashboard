@@ -128,7 +128,7 @@ export default function TermsCondition() {
 
         <div className='flex justify-end mb-5'>
           <button onClick={handleSave} type='button'
-            className={`${styles.btn_terms_condition} bg-blue-800 text-white mt-12 w-28  h-10 rounded-md ml-auto`}>
+            className={`${styles.btn_terms_condition} bg-[#ff9d03] text-white mt-12 w-28  h-10 rounded-md ml-auto`}>
             {isLoading ?
               <i className='fas fa-spinner fa-spin text-2xl'></i>
               : 'Submit'
